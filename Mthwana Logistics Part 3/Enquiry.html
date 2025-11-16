@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Mthwana Logistics</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta name="description" content="Mthwana Logistics Enquiry Page.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Enquiry.html">Enquiry</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Get in Touch With Us</h1>
+            <p>At Mthwana Logistics, we value every client and every enquiry.<br>
+            If you need more information about our services, we are here to assist you.</p>
+
+            <form id="enquiry-form">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <span id="name-error" class="error"></span><br><br>
+
+                <label for="company">Company Name (optional):</label><br>
+                <input type="text" id="company" name="company"><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+                <span id="email-error" class="error"></span><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone">
+                <span id="phone-error" class="error"></span><br><br>
+
+                <label for="enquiry-type">Type of Enquiry:</label><br>
+                <select id="enquiry-type" name="enquiry">
+                    <option value="quote">Request a Quote</option>
+                    <option value="partnership">Partnership / Sponsorship</option>
+                    <option value="volunteer">Become a Volunteer</option>
+                    <option value="general">General Information</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send Enquiry</button>
+                <input type="reset" value="Clear Form">
+            </form>
+
+            <p>Thank you for considering Mthwana Logistics.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mthwana Logistics | Student Number: ST10477265</p>
+    </footer>
+
+    <script src="JavaScript/Main.js"></script>
+     <script src="JavaScript/Form Validation.js"></script>
+
+</body>
+</html>
